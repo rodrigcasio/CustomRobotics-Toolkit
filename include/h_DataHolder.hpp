@@ -46,7 +46,7 @@ class DataHolder<std::string> {
     public:
     DataHolder(std::string val) : storedValue(val){}    // 21.
     
-    void setValue(std::string newValue){    // 22.
+    void setValue(const std::string& newValue){    // 22.
         storedValue = newValue;
     }
     std::string getValue() const {  // 23.
